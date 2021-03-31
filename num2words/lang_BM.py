@@ -115,7 +115,7 @@ class Num2Word_BM(Num2Word_Base):
     def merge(self, curr, next):
         ctext, cnum, ntext, nnum = curr + next
 
-        if cnum == 1:
+        if cnum == 1 and nnum <= 100:
             return next
 
         sep = ' '
